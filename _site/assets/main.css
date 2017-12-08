@@ -297,6 +297,8 @@ table.menu--items {
   padding: 60px 0;
   margin-bottom: 60px;
   color: #fff; }
+  .about h1 {
+    margin-bottom: 60px; }
   .about p {
     font-size: 21.6px;
     margin-bottom: 45px; }
