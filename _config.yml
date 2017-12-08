@@ -18,7 +18,7 @@ email: hola@cafemexico.ca
 description: >- # this means to ignore newlines until "baseurl:"
   Coffee • Cocktails • Tacos • Brunch
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.cafemexico.ca" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.cafemexico.ca" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-75296261-16
 
 # Build settings
