@@ -17,8 +17,8 @@ title: Mexico
 email: hola@cafemexico.ca
 description: >- # this means to ignore newlines until "baseurl:"
   Coffee • Cocktails • Tacos • Brunch
-baseurl: "/mexico" # the subpath of your site, e.g. /blog
-url: "https://storyboardinc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.cafemexico.ca/" # the base hostname & protocol for your site, e.g. http://example.com
 # google_analytics: UA-NNNNNNNN-N
 
 # Build settings
