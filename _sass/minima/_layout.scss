@@ -11,10 +11,10 @@
   margin-bottom: 0 !important;
 }
 
-.text-right {
-  text-align: right;
+.float-right {
+  float: right;
   @include media-query($on-palm) {
-    text-align: center;
+    float: none;
   }
 }
 

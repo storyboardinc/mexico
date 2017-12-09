@@ -164,11 +164,11 @@ pre {
 .no-mb {
   margin-bottom: 0 !important; }
 
-.text-right {
-  text-align: right; }
+.float-right {
+  float: right; }
   @media screen and (max-width: 600px) {
-    .text-right {
-      text-align: center; } }
+    .float-right {
+      float: none; } }
 
 .text-small {
   font-size: 14px; }
