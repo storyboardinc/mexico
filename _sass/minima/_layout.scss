@@ -193,7 +193,8 @@ table.menu--items {
 }
 
 .hours {
-  padding: $spacing-unit*2 0;
+  padding-top: $spacing-unit*2;
+  padding-bottom: $spacing-unit*2;
 
   h3 {
     margin-bottom: 0;
