@@ -157,8 +157,11 @@ pre {
 /**
  * Reusable classes
  */
-.mb-2 td {
+.pb-2 td {
   padding-bottom: 15px; }
+
+.mb-2 {
+  margin-bottom: 15px; }
 
 .no-mb {
   margin-bottom: 0 !important; }

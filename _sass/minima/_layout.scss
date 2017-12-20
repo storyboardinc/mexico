@@ -1,10 +1,14 @@
 /**
  * Reusable classes
  */
-.mb-2 {
+.pb-2 {
   td {
     padding-bottom: $spacing-unit/2;
   }
+}
+
+.mb-2 {
+  margin-bottom: $spacing-unit/2;
 }
 
 .no-mb {
