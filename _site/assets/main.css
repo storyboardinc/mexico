@@ -189,7 +189,7 @@ pre {
  * Site header
  */
 .site-header {
-  padding: 270px 0 270px 0;
+  padding: 60px 0 270px 0;
   margin-bottom: 60px;
   background: url(mood-pineapple.jpg) no-repeat center center;
   background-size: cover;
@@ -197,7 +197,7 @@ pre {
   color: #fff; }
   @media screen and (max-width: 600px) {
     .site-header {
-      padding: 120px 0; } }
+      padding: 30px 0 90px 0; } }
   .site-header h1 {
     margin-bottom: 0;
     text-transform: none; }
@@ -207,6 +207,20 @@ pre {
     @media screen and (max-width: 450px) {
       .site-header h1 {
         font-size: 16px; } }
+
+.btn-delivery {
+  max-width: 200px;
+  display: inline-block;
+  margin-bottom: 180px; }
+  .btn-delivery img {
+    border: 5px solid #fff;
+    border-radius: 15px; }
+    .btn-delivery img:hover {
+      border-color: #E56A54; }
+  @media screen and (max-width: 600px) {
+    .btn-delivery {
+      margin-bottom: 60px;
+      max-width: 160px; } }
 
 .logo {
   max-width: 650px;

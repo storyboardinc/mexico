@@ -48,7 +48,7 @@
  * Site header
  */
 .site-header {
-  padding: $spacing-unit*9 0 $spacing-unit*9 0;
+  padding: $spacing-unit*2 0 $spacing-unit*9 0;
   margin-bottom: $spacing-unit*2;
   background: url(mood-pineapple.jpg) no-repeat center center;
   background-size: cover;
@@ -56,7 +56,7 @@
   color: $white;
 
   @include media-query($on-palm) {
-    padding: $spacing-unit*4 0;
+    padding: $spacing-unit 0 $spacing-unit*3 0;
   }
 
   h1 {
@@ -69,6 +69,25 @@
     @include media-query($on-small) {
       font-size: 16px;
     }
+  }
+}
+
+.btn-delivery {
+  max-width: 200px;
+  display: inline-block;
+  margin-bottom: $spacing-unit*6;
+
+  img {
+    border: 5px solid $white;
+    border-radius: 15px;
+    &:hover {
+      border-color: $brand-color;
+    }
+  }
+
+  @include media-query($on-palm) {
+    margin-bottom: $spacing-unit*2;
+    max-width: 160px;
   }
 }
 
