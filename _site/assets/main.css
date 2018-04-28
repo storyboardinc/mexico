@@ -157,7 +157,7 @@ pre {
 /**
  * Reusable classes
  */
-.pb-2 td {
+.pb-2 th {
   padding-bottom: 15px; }
 
 .mb-2 {
@@ -325,6 +325,9 @@ table.menu--items {
     text-align: right; }
   table.menu--items thead th {
     font-size: 27px; }
+
+.menu--priceless td {
+  display: none; }
 
 .social {
   background: #2D2926;

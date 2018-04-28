@@ -2,7 +2,7 @@
  * Reusable classes
  */
 .pb-2 {
-  td {
+  th {
     padding-bottom: $spacing-unit/2;
   }
 }
@@ -242,6 +242,12 @@ table.menu--items {
     th {
       font-size: $base-font-size*1.5;
     }
+  }
+}
+
+.menu--priceless {
+  td {
+    display: none;
   }
 }
 
