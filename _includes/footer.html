@@ -6,11 +6,28 @@
     </div>
 
     <ul class="simple-list">
-      <li>(519) 704-0288</li>
+      <li>519-704-0288</li>
       <li><a href="mailto:hola@cafemexico.ca" target="_blank" title="Email Mexico">hola@cafemexico.ca</a></li>
-      <li><a href="https://goo.gl/maps/uvK3W9iRJ6y" target="_blank" title="Get directions">410 Front St. N., Sarnia, ON</a></li>
+      <li><a href="https://goo.gl/maps/uvK3W9iRJ6y" target="_blank" title="Get directions">410 Front St N, Sarnia, ON</a></li>
     </ul>
 
   </div>
 
 </footer>
+
+{% assign image = '{{image}}' %}
+{% assign link = '{{link}}' %}
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        clientId: 'fde23c6861aa4ccebd2dff92e53a2a99',
+        accessToken: '6028056795.fde23c6.dfa477e28afe4a3493d4db1a399f2eb1',
+        get: 'user',
+        userId: '6028056795',
+        sortBy: 'most-recent',
+        limit: '3',
+        template: '<a href="{{link}}"><div class="insta-img" style="background-image:url({{image}});"></div></a>',
+        resolution: 'standard_resolution'
+    });
+    feed.run();
+</script>

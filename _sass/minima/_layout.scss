@@ -26,6 +26,18 @@
   font-size: 14px;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .simple-list {
   margin-left: 0;
 
@@ -48,55 +60,113 @@
  * Site header
  */
 .site-header {
-  padding: $spacing-unit*2 0 $spacing-unit*9 0;
-  margin-bottom: $spacing-unit*2;
-  background: url(mood-pineapple.jpg) no-repeat center center;
-  background-size: cover;
+  padding: $spacing-unit 0 $spacing-unit 0;
   text-align: center;
-  color: $white;
 
-  @include media-query($on-palm) {
-    padding: $spacing-unit 0 $spacing-unit*3 0;
+  .wrapper {
+    max-width: 100%;
+    @include media-query($on-palm) {
+      margin-bottom: 0;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: $spacing-unit;
+
+    @include media-query($on-palm) {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
   }
 
   h1 {
     margin-bottom: 0;
     text-transform: none;
+    font-size: 24px;
 
     @include media-query($on-palm) {
-      font-size: 24px;
+      margin-bottom: $spacing-unit/2;
     }
+
     @include media-query($on-small) {
       font-size: 16px;
     }
   }
-}
 
-.btn-delivery {
-  max-width: 200px;
-  display: inline-block;
-  margin-bottom: $spacing-unit*6;
-
-  img {
-    border: 5px solid $white;
-    border-radius: 15px;
-    &:hover {
-      border-color: $brand-color;
+  .text-right {
+    @include media-query($on-palm) {
+      text-align: center;
     }
-  }
-
-  @include media-query($on-palm) {
-    margin-bottom: $spacing-unit*2;
-    max-width: 160px;
   }
 }
 
 .logo {
-  max-width: 650px;
+  max-width: 280px;
   display: block;
-  margin: 0 auto $spacing-unit auto;
+  margin: 0 auto $spacing-unit/2 auto;
+
+  @include media-query($on-small) {
+    max-width: 200px
+  }
 }
 
+.social-icon-link {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 5px;
+  background: $brand-color;
+  margin-right: 2px;
+  margin-bottom: 0;
+
+  .social-icon-bg {
+    fill: $white;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $black;
+  }
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+a.btn {
+  display: inline-block;
+  line-height: 1;
+  color: $white !important;
+  background: $brand-color;
+  padding: $spacing-unit/2 $spacing-unit;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $black;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.banner-img {
+  background: url(mexico.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  height: 0;
+  padding-top: calc(9/21 * 100%);
+
+  @include media-query($on-palm) {
+    background: url(mexico-sm.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: calc(5/8 * 100%);
+  }
+}
 
 /**
  * Home page
@@ -144,7 +214,7 @@ h1, h2, h3 {
 table.menu--items {
   width: 100%;
   table-layout: fixed;
-  margin-bottom: $spacing-unit*2;
+  margin-bottom: $spacing-unit;
 
   tr {
     vertical-align: top;
@@ -198,6 +268,10 @@ table.menu--items {
     text-transform: none;
     margin-bottom: 0;
   }
+
+  @include media-query($on-small) {
+    padding: $spacing-unit 0;
+  }
 }
 
 #instafeed {
@@ -213,6 +287,13 @@ table.menu--items {
   @include media-query($on-palm) {
     grid-template-columns: 1fr;
   }
+
+  .insta-img {
+    background-size: cover;
+    overflow: hidden;
+    height: 0;
+    padding-top: 100%;
+  }
 }
 
 .hours {
@@ -221,6 +302,11 @@ table.menu--items {
 
   h3 {
     margin-bottom: 0;
+  }
+
+  @include media-query($on-small) {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
   }
 }
 
@@ -231,12 +317,23 @@ table.menu--items {
   color: $white;
 
   h1 {
-    margin-bottom: $spacing-unit*2;
+    margin-bottom: $spacing-unit;
   }
 
   p {
     font-size: $base-font-size*1.2;
     margin-bottom: $spacing-unit*1.5;
+
+    @include media-query($on-small) {
+      font-size: $base-font-size;
+      margin-bottom: $spacing-unit;
+    }
+  }
+
+  @include media-query($on-small) {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
   }
 }
 
@@ -244,7 +341,7 @@ table.menu--items {
  * Site footer
  */
  .site-footer {
-  padding-bottom: $spacing-unit*2;
+  padding-bottom: $spacing-unit;
   text-align: center;
  }
 

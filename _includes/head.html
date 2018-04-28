@@ -6,7 +6,83 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Mexico">
+  <meta property="og:url" content="https://www.cafemexico.ca">
+  <meta property="og:description" content="Coffee • Cocktails • Tacos • Brunch">
+  <meta property="og:image" content="https://www.cafemexico.ca/assets/mexico.jpg">
+  <meta property="restaurant:contact_info:website" content="https://www.cafemexico.ca">
+  <meta property="restaurant:contact_info:locality" content="Sarnia">
+  <meta property="restaurant:contact_info:region" content="Ontario">
+  <meta property="restaurant:contact_info:country_name" content="Canada">
+  <meta property="restaurant:contact_info:email" content="hola@cafemexico.ca">
+  <meta property="restaurant:contact_info:phone_number" content="+1 519-704-0288">
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Restaurant",
+    "name": "Mexico",
+    "description": "Coffee • Cocktails • Tacos • Brunch",
+    "image": "https://www.cafemexico.ca/assets/mexico.jpg",
+    "@id": "https://www.cafemexico.ca",
+    "url": "https://www.cafemexico.ca",
+    "sameAs": ["https://www.facebook.com/mexicoinsarnia", "https://instagram.com/mexicoinsarnia"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarnia",
+      "addressRegion": "Ontario",
+      "postalCode": "N7T5S9",
+      "streetAddress": "410 Front St N"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.9801968,
+      "longitude": -82.4048141
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "opens": "10:00",
+      "closes": "20:00"
+    },{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "23:00"
+    },{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "23:00"
+    },{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "15:00"
+    }],
+    "telephone": "+1 519-704-0288",
+    "priceRange": "$$",
+    "servesCuisine": "Tacos, Brunch",
+    "hasMenu": "https://www.cafemexico.ca",
+    "paymentAccepted":"Cash, Debit, Credit"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="/assets/mx-favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/mx-favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/mx-favicon-96x96.png" sizes="96x96">
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

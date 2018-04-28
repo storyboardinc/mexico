@@ -10,7 +10,7 @@ $base-line-height: 1.25 !default;
 
 $spacing-unit:     30px !default;
 
-$white:            #fff;
+$white:            #F8F1E0;
 $black:            #2D2926;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -23,8 +23,8 @@ $brand-color:      #E56A54 !default;
 // Width of the content area
 $content-width:    960px !default;
 
-$on-small:         450px !default;
-$on-palm:          600px !default;
+$on-small:         500px !default;
+$on-palm:          800px !default;
 $on-laptop:        800px !default;
 
 // Use media queries like this:
