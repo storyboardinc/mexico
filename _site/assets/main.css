@@ -274,7 +274,7 @@ a.btn {
     .banner-img {
       background: url(mexico-sm.jpg) no-repeat center center;
       background-size: cover;
-      padding-top: calc(5/8 * 100%); } }
+      padding-top: calc(3/4 * 100%); } }
 
 /**
  * Home page
