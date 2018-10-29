@@ -2,13 +2,23 @@
  * Reusable classes
  */
 .pb-2 {
+  padding-bottom: $spacing-unit/2;
+
   th {
     padding-bottom: $spacing-unit/2;
   }
 }
 
+.pb-3 {
+  padding-bottom: $spacing-unit;
+}
+
 .mb-2 {
   margin-bottom: $spacing-unit/2;
+}
+
+.mb-3 {
+  margin-bottom: $spacing-unit;
 }
 
 .no-mb {
@@ -36,6 +46,14 @@
 
 .text-right {
   text-align: right;
+}
+
+.text-red {
+  color: $brand-color;
+}
+
+.text-caps {
+  text-transform: uppercase;
 }
 
 .simple-list {
@@ -102,7 +120,8 @@
   }
 }
 
-.logo {
+.logo,
+.logo-link {
   max-width: 280px;
   display: block;
   margin: 0 auto $spacing-unit/2 auto;
@@ -137,7 +156,8 @@
   }
 }
 
-a.btn {
+a.btn,
+button {
   display: inline-block;
   line-height: 1;
   color: $white !important;
@@ -166,7 +186,7 @@ a.btn {
     background-size: cover;
     padding-top: calc(3/4 * 100%);
   }
-}
+} 
 
 /**
  * Home page
@@ -319,7 +339,6 @@ table.menu--items {
 .about {
   background: $brand-color;
   padding: $spacing-unit*2 0;
-  margin-bottom: $spacing-unit*2;
   color: $white;
 
   h1 {
@@ -344,10 +363,137 @@ table.menu--items {
 }
 
 /**
+ * Reservations page
+ */
+.lead {
+  font-size: 21px;
+  max-width: 620px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media-query($on-palm) {
+    font-size: $base-font-size;
+  }
+}
+
+body.post {
+  .banner-img {
+    background: url(bar.jpg) no-repeat center center;
+
+    @include media-query($on-palm) {
+      background: url(bar-sm.jpg) no-repeat center center;
+    }
+  }
+
+  .wrapper-sm {
+    display: block;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.booking-list {
+  li {
+    margin-bottom: $spacing-unit/3;
+  }
+}
+
+.booking-options {
+  h3 {
+    margin-bottom: 5px;
+  }
+}
+
+.form-area {
+  background: $brand-color;
+  color: $white;
+  padding: $spacing-unit $spacing-unit $spacing-unit*1.5;
+
+  @include media-query($on-palm) {
+    margin-top: $spacing-unit*2;
+    padding: $spacing-unit/2 $spacing-unit/2 $spacing-unit;
+  }
+}
+
+.notification {
+  display: none;
+  background: $black;
+  padding: $spacing-unit/2;
+  color: $white;
+  text-align: center;
+  transition: 300ms ease-in-out;
+  border-radius: 2em;
+}
+
+.notification-error {
+  background: red;
+}
+
+input,
+select,
+textarea {
+  box-sizing : border-box;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-width: 1px;
+  border-style: solid;
+  color: $black;
+  font-size: $base-font-size;
+  font-weight: 400;
+  padding: $spacing-unit/3;
+  width: 100%;
+  margin-bottom: $spacing-unit/2;
+}
+
+label {
+  display: block;
+  margin-bottom: $spacing-unit/4;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: $spacing-unit/2 $spacing-unit;
+    width: auto;
+    overflow: visible;
+    text-align: inherit;
+    outline: none;
+
+    background: $black;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+
+    /* Remove excess padding and border in Firefox 4+ */
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+/**
  * Site footer
  */
  .site-footer {
-  padding-bottom: $spacing-unit;
+  padding: $spacing-unit 0;
   text-align: center;
  }
 
