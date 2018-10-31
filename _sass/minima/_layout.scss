@@ -362,12 +362,29 @@ table.menu--items {
   }
 }
 
+.party {
+  background: url(bar.jpg) no-repeat center center;
+  background-size: cover;
+  // overflow: hidden;
+  // height: 0;
+  // padding-top: calc(9/21 * 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  text-align: center;
+}
+
+.party-content {
+  padding: $spacing-unit*7.5 $spacing-unit;
+}
+
 /**
  * Reservations page
  */
 .lead {
   font-size: 21px;
-  max-width: 620px;
+  max-width: 650px;
   margin-right: auto;
   margin-left: auto;
 
@@ -378,6 +395,7 @@ table.menu--items {
 
 body.post {
   .banner-img {
+    display: none;
     background: url(bar.jpg) no-repeat center center;
 
     @include media-query($on-palm) {

@@ -413,12 +413,24 @@ table.menu--items {
       padding-bottom: 30px;
       margin-bottom: 30px; } }
 
+.party {
+  background: url(bar.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F8F1E0;
+  text-align: center; }
+
+.party-content {
+  padding: 225px 30px; }
+
 /**
  * Reservations page
  */
 .lead {
   font-size: 21px;
-  max-width: 620px;
+  max-width: 650px;
   margin-right: auto;
   margin-left: auto; }
   @media screen and (max-width: 800px) {
@@ -426,6 +438,7 @@ table.menu--items {
       font-size: 18px; } }
 
 body.post .banner-img {
+  display: none;
   background: url(bar.jpg) no-repeat center center; }
   @media screen and (max-width: 800px) {
     body.post .banner-img {
