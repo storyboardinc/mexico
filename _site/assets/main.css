@@ -165,6 +165,9 @@ pre {
 .pb-3 {
   padding-bottom: 30px; }
 
+.pt-2 {
+  padding-top: 15px; }
+
 .mb-2 {
   margin-bottom: 15px; }
 
@@ -443,6 +446,8 @@ body.post .banner-img {
   @media screen and (max-width: 800px) {
     body.post .banner-img {
       background: url(bar-sm.jpg) no-repeat center center; } }
+body.post .post-header {
+  padding-top: 15px; }
 body.post .wrapper-sm {
   display: block;
   max-width: 300px;

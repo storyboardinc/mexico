@@ -13,6 +13,10 @@
   padding-bottom: $spacing-unit;
 }
 
+.pt-2 {
+  padding-top: $spacing-unit/2;
+}
+
 .mb-2 {
   margin-bottom: $spacing-unit/2;
 }
@@ -401,6 +405,10 @@ body.post {
     @include media-query($on-palm) {
       background: url(bar-sm.jpg) no-repeat center center;
     }
+  }
+
+  .post-header {
+    padding-top: $spacing-unit/2;
   }
 
   .wrapper-sm {
