@@ -325,6 +325,19 @@ h1, h2, h3 {
 
 .menu h2 {
   margin-bottom: 0; }
+.menu h3 {
+  display: block;
+  position: relative;
+  margin-bottom: 30px; }
+  .menu h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url(wave.png); }
 
 .menu--description {
   font-size: 14px; }
@@ -359,9 +372,6 @@ table.menu--items {
 .menu--priceless td {
   display: none; }
 
-.menu h3 {
-  border-bottom: 1px solid #E56A54; }
-
 .menu-column p {
   font-size: 14px; }
   .menu-column p span {
@@ -385,6 +395,9 @@ table.menu--items {
   .social h3 {
     text-transform: none;
     margin-bottom: 0; }
+    @media screen and (max-width: 500px) {
+      .social h3 {
+        font-size: 16px; } }
   @media screen and (max-width: 500px) {
     .social {
       padding: 30px 0; } }
